@@ -16,6 +16,11 @@ a {
     color: white;
 }
 
+body {
+    background-color: #81D8D0;
+    color: white;
+}
+
 /* global end */
 
 /* Start Header */
@@ -34,7 +39,7 @@ a {
 }
 
 .header .logo {
-    width: 200px;
+    width: 100px;
     border-radius: 25px;
 }
 
@@ -158,6 +163,7 @@ a {
 .hero-section .container .circle-image img {
     width: 500px;
     margin: 25px auto;
+    border-radius: 25px;
 }
 
 .hero-section .container .text {
@@ -172,6 +178,7 @@ a {
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    border-radius: 25px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -243,7 +250,20 @@ a {
 
 .services-section .container .card {
     background-color: #e3e3e3;
+    color: white;
     border-radius: 25px;
+}
+
+.services-section .container .card:nth-child(1) {
+    background-color: #79AC78;
+}
+
+.services-section .container .card:nth-child(2) {
+    background-color: #EE9322;
+}
+
+.services-section .container .card:nth-child(3) {
+    background-color: #C70039;
 }
 
 .services-section .container .image img {
@@ -270,7 +290,7 @@ a {
     height: 2px;
     width: 50%;
     margin: auto;
-    background-color: #797979;
+    background-color: #eeeeee;
     display: block;
 }
 
@@ -282,7 +302,7 @@ a {
     padding: 10px 25px;
     border: 0;
     border-radius: 25px;
-    background-color: #393e46;
+    background-color: #81D8D0;
     color: white;
 }
 
@@ -359,6 +379,10 @@ a {
 
 .contact-section .container .cards .card:nth-child(3) a:hover {
     color: #47494a;
+}
+
+.contact-section svg {
+    margin: 0 25px;
 }
 
 @media screen and (max-width: 426px) {
