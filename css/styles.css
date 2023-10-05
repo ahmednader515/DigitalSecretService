@@ -137,15 +137,87 @@ a {
     position: relative;
 }
 
+.hero-section .container .images {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.hero-section .container .images img {
+    width: 200px;
+    margin: 25px auto;
+    border-radius: 25px;
+}
+
+.hero-section .container .circle-image {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.hero-section .container .circle-image img {
+    width: 500px;
+    margin: 25px auto;
+}
+
 .hero-section .container .text {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 5%;
+    margin: 25px auto;
+    text-align: center;
+    line-height: 2;
 }
 
 .hero-section .container video {
-    width: 100%;
+    width: 50%;
+    margin-top: 25px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-section .container .images {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .hero-section .container .images img {
+        width: 100%;
+        margin: 25px auto;
+        border-radius: 25px;
+    }
+
+    .hero-section .container .circle-image {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .hero-section .container .circle-image img {
+        width: 100%;
+        margin: 25px auto;
+        border-radius: 25px;
+    }
+
+    .hero-section .container .text {
+        width: 80%;
+        margin: 25px auto;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .hero-section .container video {
+        width: 90%;
+        border-radius: 25px;
+        margin-top: 25px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
 }
 
 /* Hero End */
@@ -250,9 +322,9 @@ a {
 }
 
 .contact-section .container .cards {
-    display: grid;
-    grid-template-areas: "one one two two";
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .contact-section .container .cards .card {
