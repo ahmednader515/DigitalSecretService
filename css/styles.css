@@ -27,15 +27,18 @@ body {
 
 .header {
     padding: 20px;
-    background-color: #393e46;
 }
 
 .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 80%;
     margin: auto;
+}
+
+.header .container video {
+    width: 40%;
 }
 
 .header .logo {
